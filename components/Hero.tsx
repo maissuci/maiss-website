@@ -63,7 +63,7 @@ export default function Hero() {
 
     return (
         <main className="flex-grow mt-16">
-            <section className="container mx-auto pt-40 pb-20 px-6 flex justify-center relative overflow-hidden">
+            <section className="pt-40 pb-20 px-6 flex justify-center relative overflow-hidden">
                 {/* Simplified Geometric Background */}
                 <div className="absolute inset-0 overflow-hidden pointer-events-none">
                     {/* Large blurred circle - top left */}
