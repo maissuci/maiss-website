@@ -122,7 +122,7 @@ export default function EventsPage() {
       {/* Image Board */}
       <div className="relative w-full h-[600px] mb-16 mt-20">
         <img
-          src="/images/prodev1.jpg"
+          src="/images/prodev1.JPG"
           alt="MAISS Community"
           className="w-full h-full object-cover"
         />

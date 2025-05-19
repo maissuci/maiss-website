@@ -36,27 +36,27 @@ export default function Hero() {
     // images for carousel
     const carouselImages = [
         {
-            src: "/images/maiss13.jpg",
+            src: "/images/maiss13.JPG",
             alt: "Fam Reveal - Fall 2024",
         },
         {
-            src: "/images/prodev1.jpg",
+            src: "/images/prodev1.JPG",
             alt: "ProDev Workshop - Spring 2025",
         },
         {
-            src: "/images/maiss10.jpg",
+            src: "/images/maiss10.JPG",
             alt: "Boothing - Spring 2025",
         },
         {
-            src: "/images/maiss11.jpg",
+            src: "/images/maiss11.JPG",
             alt: "New Board Photoshoot - Spring 2025",
         },
         {
-            src: "/images/maiss12.jpg",
+            src: "/images/maiss12.JPG",
             alt: "External Affairs - Winter 2025",
         },   
         {
-            src: "/images/maiss8.jpg",
+            src: "/images/maiss8.JPG",
             alt: "Beach Social - Fall 2024",
         },   
     ]

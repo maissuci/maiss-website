@@ -20,7 +20,7 @@ const boardMembers = [
         id: 2,
         name: "Aidan Jayakumar",
         position: "Executive Vice President",
-        image: "/images/people/aidan.jpg",
+        image: "/images/people/aidan.JPG",
         year: "Sophomore",
         major: "Business Administration",
         quote:
@@ -30,7 +30,7 @@ const boardMembers = [
         id: 3,
         name: "Henry Lee",
         position: "Co-VP of External Affairs",
-        image: "/images/people/henry.jpg",
+        image: "/images/people/henry.JPG",
         year: "Sophomore",
         major: "BIM & Data Science",
         quote:
@@ -40,7 +40,7 @@ const boardMembers = [
         id: 4,
         name: "Trisha Illapani",
         position: "Co-VP of External Affairs",
-        image: "/images/people/trisha.jpg",
+        image: "/images/people/trisha.JPG",
         year: "Junior",
         major: "Business Administration",
         quote:
@@ -60,7 +60,7 @@ const boardMembers = [
         id: 6,
         name: "Bonnie Tran",
         position: "Co-VP of Marketing",
-        image: "/images/people/bonnie.jpg",
+        image: "/images/people/bonnie.JPG",
         year: "Freshman",
         major: "Business Administration",
         quote:
@@ -70,7 +70,7 @@ const boardMembers = [
         id: 7,
         name: "Travis Yen",
         position: "Co-VP of Marketing",
-        image: "/images/people/travis.jpg",
+        image: "/images/people/travis.JPG",
         year: "Freshman",
         major: "Undeclared",
         quote:
@@ -80,7 +80,7 @@ const boardMembers = [
         id: 8,
         name: "Lauren Nguyen",
         position: "Co-VP of Marketing",
-        image: "/images/people/lauren.jpg",
+        image: "/images/people/lauren.JPG",
         year: "Sophomore",
         major: "BIM",
         quote:
@@ -90,7 +90,7 @@ const boardMembers = [
         id: 9,
         name: "Eshaan Rawat",
         position: "Co-VP of Professional Development",
-        image: "/images/people/eshaan.jpg",
+        image: "/images/people/eshaan.JPG",
         year: "Sophomore",
         major: "Computer Science",
         quote:
@@ -100,7 +100,7 @@ const boardMembers = [
         id: 10,
         name: "Amelia Jukita",
         position: "Co-VP of Professional Development",
-        image: "/images/people/mia.jpg",
+        image: "/images/people/mia.JPG",
         year: "Sophomore",
         major: "BIM",
         quote:
@@ -110,7 +110,7 @@ const boardMembers = [
         id: 11,
         name: "Marcus Cao",
         position: "VP of Finance",
-        image: "/images/people/marcus.jpg",
+        image: "/images/people/marcus.JPG",
         year: "Sophomore",
         major: "Business Administration",
         quote:
@@ -120,7 +120,7 @@ const boardMembers = [
         id: 12,
         name: "Erin Tran",
         position: "Co-VP of Internal Affairs",
-        image: "/images/people/erin.jpg",
+        image: "/images/people/erin.JPG",
         year: "Sophomore",
         major: "Business Economics",
         quote:
@@ -130,7 +130,7 @@ const boardMembers = [
         id: 13,
         name: "Karissa Ting",
         position: "Co-VP of Internal Affairs",
-        image: "/images/people/karissa.jpg",
+        image: "/images/people/karissa.JPG",
         year: "Sophomore",
         major: "BIM",
         quote:
@@ -150,7 +150,7 @@ const boardMembers = [
         id: 15,
         name: "Tirza Kunaidy",
         position: "Co-VP of Community Development",
-        image: "/images/people/tirza.jpg",
+        image: "/images/people/tirza.JPG",
         year: "Sophomore",
         major: "Business Economics",
         quote:
@@ -247,7 +247,7 @@ export default function BoardPage() {
             {/* Image Board */}
             <div className="relative w-full h-[600px] mb-16 mt-20">
                 <img
-                    src="/images/board1.jpg"
+                    src="/images/board1.JPG"
                     alt="MAISS Community"
                     className="w-full h-full object-cover"
                 />

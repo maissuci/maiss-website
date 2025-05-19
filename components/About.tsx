@@ -235,7 +235,7 @@ export default function AboutPage() {
                         >
                             <div className="md:w-1/2 rounded-2xl overflow-hidden">
                                 <Image
-                                    src="/images/maiss7.jpg"
+                                    src="/images/maiss7.JPG"
                                     alt="MAISS Social"
                                     width={1439}
                                     height={508}
