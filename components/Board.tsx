@@ -160,8 +160,9 @@ const boardMembers = [
 
 // Split board members into top section (first 2) and bottom section
 const topBoardMembers = boardMembers.slice(0, 2)
-const bottomBoardMembers = boardMembers.slice(2, 11)
+const tempBottomBoardMembers = boardMembers.slice(2, 15)
 
+const bottomBoardMembers = boardMembers.slice(2, 11)
 const internalMember = boardMembers.slice(11,13)
 const comMember = boardMembers.slice(13, 15)
 
@@ -278,7 +279,7 @@ export default function BoardPage() {
                 </div>
 
 
-                {/* Top board members section (2 people) */}
+                {/* executive committee (2 people) */}
                 <div className="grid grid-cols-2 max-w-3xl mx-auto gap-x-20 mb-16">
                     {topBoardMembers.map((member) => (
                         <BoardMemberCard key={member.id} name={member.name} position={member.position} image={member.image} />
@@ -295,31 +296,12 @@ export default function BoardPage() {
                     </h1>
                 </div>
 
-                {/* Bottom board members section (remaining 12 people) */}
+                {/* board members */}
                 <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-6 gap-y-10 gap-x-20 mb-20">
-                    {bottomBoardMembers.map((member) => (
+                    {tempBottomBoardMembers.map((member) => (
                         <BoardMemberCard key={member.id} name={member.name} position={member.position} image={member.image} />
                     ))}
                 </div>
-
-
-                {/* internal - 2 ppl */}
-                <div className="grid grid-cols-2 max-w-3xl mx-auto gap-x-20 mb-16">
-                    {internalMember.map((member) => (
-                        <BoardMemberCard key={member.id} name={member.name} position={member.position} image={member.image} />
-                    ))}
-                </div>
-
-                {/* com - 2 ppl */}
-                <div className="grid grid-cols-2 max-w-3xl mx-auto gap-x-20 mb-16">
-                    {comMember.map((member) => (
-                        <BoardMemberCard key={member.id} name={member.name} position={member.position} image={member.image} />
-                    ))}
-                </div>
-
-
-                {/* Testimonial carousel */}
-                {/* <TestimonialCarousel /> */}
             </div>
         </div>
     )
