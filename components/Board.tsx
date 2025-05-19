@@ -10,7 +10,7 @@ const boardMembers = [
         id: 1,
         name: "Andrew Ly",
         position: "President",
-        image: "/images/people/andrew.jpg",
+        image: "/images/people/andrew.JPG",
         year: "Junior",
         major: "BIM",
         quote:
