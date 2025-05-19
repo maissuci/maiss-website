@@ -115,7 +115,7 @@ export default function AboutPage() {
                                 <div className="md:w-3/4">
                                     <h3 className="text-xl font-medium mb-2 text-gray-900">Growth & Expansion</h3>
                                     <p className="text-gray-600">
-                                        By 2015, MAISS had grown to dozens of active members with an established alumni network,
+                                        By 2020, MAISS had grown to dozens of active members with an established alumni network,
                                         offering workshops, panels, and social events.
                                     </p>
                                 </div>
