@@ -162,7 +162,7 @@ export default function AboutPage() {
                         </motion.div>
 
                         <PartnersCarousel partners={partnerLogos} direction="right" />
-                        <div className="h-12"></div>
+                        <div className="h-6"></div>
                         <PartnersCarousel partners={partnerLogos2} direction="left" />
                     </div>
                 </section>

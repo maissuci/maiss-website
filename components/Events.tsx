@@ -160,7 +160,7 @@ export default function EventsPage() {
                 >
                   {/* Event Card */}
                   <div
-                    className={`flex flex-col ${index % 2 === 0 ? "md:flex-row" : "md:flex-row-reverse"} gap-8 items-center`}
+                    className={`flex flex-col ${index % 2 === 0 ? "md:flex-row" : "md:flex-row-reverse"} gap-12 items-center`}
                   >
                     {/* Image Section */}
                     <div className="w-full md:w-1/2 relative">
