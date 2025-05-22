@@ -23,6 +23,17 @@ export default function EventsPage() {
   const [isScrolled, setIsScrolled] = useState(false)
   const [events, setEvents] = useState<Event[]>([
     {
+      id: "new-grad-spotlight",
+      title: "New Graduates Spotlight",
+      date: "May 21st, 2025",
+      time: "6:00 PM - 7:00 PM",
+      location: "SB1 2321",
+      description:
+        "Celebrating the journey, the growth, and the next chapter! Join us in spotlighting our amazing graduating seniors who’ve left their mark on our community. From late nights to big wins, we’re so proud of everything you’ve accomplished! Check out our stories this week to see where they’re headed next and leave them some love!",
+      image: "/images/events/event8.png",
+      status: "past",
+    },
+    {
       id: "intro-to-sql",
       title: "Intro to SQL",
       date: "May 14th, 2025",
