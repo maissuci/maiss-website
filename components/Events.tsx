@@ -23,6 +23,17 @@ export default function EventsPage() {
   const [isScrolled, setIsScrolled] = useState(false)
   const [events, setEvents] = useState<Event[]>([
     {
+      id: "beach-bonfire",
+      title: "Beach Bonfire Social",
+      date: "May 28th, 2025",
+      time: "6:00 PM - 7:00 PM",
+      location: "Corona Del Mar Beach",
+      description:
+        "Celebrate the end of the quarter with us at our Beach Bonfire Social at Corona Del Mar! 🌊🔥 Enjoy ocean views, good vibes, and a well-deserved break with friends.",
+      image: "/images/events/event9.png",
+      status: "upcoming",
+    },
+    {
       id: "new-grad-spotlight",
       title: "New Graduates Spotlight",
       date: "May 21st, 2025",
