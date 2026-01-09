@@ -1,9 +1,5 @@
 "use client"
 
-import { ChevronLeft, ChevronRight } from "lucide-react"
-import { useState } from "react"
-import { Button } from "@/components/ui/button"
-
 // Board member data
 const boardMembers = [
     {
@@ -162,10 +158,6 @@ const boardMembers = [
 const topBoardMembers = boardMembers.slice(0, 2)
 const tempBottomBoardMembers = boardMembers.slice(2, 15)
 
-const bottomBoardMembers = boardMembers.slice(2, 11)
-const internalMember = boardMembers.slice(11,13)
-const comMember = boardMembers.slice(13, 15)
-
 // Board member card component
 function BoardMemberCard({ name, position, image }: { name: string; position: string; image: string }) {
     return (
@@ -175,69 +167,6 @@ function BoardMemberCard({ name, position, image }: { name: string; position: st
             </div>
             <h3 className="font-bold text-center">{name}</h3>
             <p className="text-sm text-gray-600 text-center">{position}</p>
-        </div>
-    )
-}
-
-// Testimonial carousel component
-function TestimonialCarousel() {
-    const [currentIndex, setCurrentIndex] = useState(0)
-
-    const nextSlide = () => {
-        setCurrentIndex((prevIndex) => (prevIndex + 1) % boardMembers.length)
-    }
-
-    const prevSlide = () => {
-        setCurrentIndex((prevIndex) => (prevIndex - 1 + boardMembers.length) % boardMembers.length)
-    }
-
-    const currentMember = boardMembers[currentIndex]
-
-    return (
-        <div className="mt-20 mb-12 max-w-4xl mx-auto">
-            <h2 className="text-4xl font-bold text-center mb-10 bg-gradient-to-r from-purple-400 via-violet-300 to-blue-300 bg-clip-text text-transparent">
-                Hear from our Board
-            </h2>
-
-            <div className="flex items-center gap-8 p-6 bg-white rounded-lg border border-purple-100 shadow-sm">
-                <Button
-                    variant="outline"
-                    size="icon"
-                    className="rounded-full border-purple-200 hover:bg-purple-50 hover:border-purple-300"
-                    onClick={prevSlide}
-                >
-                    <ChevronLeft className="h-6 w-6 text-purple-500" />
-                    <span className="sr-only">Previous</span>
-                </Button>
-
-                <div className="flex flex-1 gap-8">
-                    <div className="w-48 h-64 flex-shrink-0">
-                        <img
-                            src={currentMember.image || "/placeholder.svg"}
-                            alt={currentMember.name}
-                            className="w-full h-full object-cover"
-                        />
-                    </div>
-
-                    <div className="flex-1">
-                        <h3 className="text-xl font-bold mb-1">{currentMember.name}</h3>
-                        <p className="text-sm text-gray-700 mb-4">
-                            {currentMember.position} | {currentMember.year} | {currentMember.major}
-                        </p>
-                        <p className="text-gray-600">{currentMember.quote}</p>
-                    </div>
-                </div>
-
-                <Button
-                    variant="outline"
-                    size="icon"
-                    className="rounded-full border-purple-200 hover:bg-purple-50 hover:border-purple-300"
-                    onClick={nextSlide}
-                >
-                    <ChevronRight className="h-6 w-6 text-purple-500" />
-                    <span className="sr-only">Next</span>
-                </Button>
-            </div>
         </div>
     )
 }
