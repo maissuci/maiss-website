@@ -7,150 +7,90 @@ const boardMembers = [
         name: "Andrew Ly",
         position: "President",
         image: "/images/people/andrew.JPG",
-        year: "Junior",
-        major: "BIM",
-        quote:
-            "Your quote why they joined MAISS. What they've gained here & Overall their experience in MAISS. 1-2 sentences.",
     },
     {
         id: 2,
         name: "Aidan Jayakumar",
         position: "Executive Vice President",
         image: "/images/people/aidan.JPG",
-        year: "Sophomore",
-        major: "Business Administration",
-        quote:
-            "Your quote why they joined MAISS. What they've gained here & Overall their experience in MAISS. 1-2 sentences.",
     },
     {
         id: 3,
         name: "Henry Lee",
         position: "Co-VP of External Affairs",
         image: "/images/people/henry.JPG",
-        year: "Sophomore",
-        major: "BIM & Data Science",
-        quote:
-            "Your quote why they joined MAISS. What they've gained here & Overall their experience in MAISS. 1-2 sentences.",
     },
     {
         id: 4,
         name: "Trisha Illapani",
         position: "Co-VP of External Affairs",
         image: "/images/people/trisha.JPG",
-        year: "Junior",
-        major: "Business Administration",
-        quote:
-            "Your quote why they joined MAISS. What they've gained here & Overall their experience in MAISS. 1-2 sentences.",
     },
     {
         id: 5,
         name: "Naveen Sanka",
         position: "Co-VP of External Affairs",
         image: "/images/people/naveen.png",
-        year: "Sophomore",
-        major: "Business Economics",
-        quote:
-            "Your quote why they joined MAISS. What they've gained here & Overall their experience in MAISS. 1-2 sentences.",
     },
     {
         id: 6,
         name: "Bonnie Tran",
         position: "Co-VP of Marketing",
         image: "/images/people/bonnie.JPG",
-        year: "Freshman",
-        major: "Business Administration",
-        quote:
-            "Your quote why they joined MAISS. What they've gained here & Overall their experience in MAISS. 1-2 sentences.",
     },
     {
         id: 7,
         name: "Travis Yen",
         position: "Co-VP of Marketing",
         image: "/images/people/travis.JPG",
-        year: "Freshman",
-        major: "Undeclared",
-        quote:
-            "Your quote why they joined MAISS. What they've gained here & Overall their experience in MAISS. 1-2 sentences.",
     },
     {
         id: 8,
         name: "Lauren Nguyen",
         position: "Co-VP of Marketing",
         image: "/images/people/lauren.JPG",
-        year: "Sophomore",
-        major: "BIM",
-        quote:
-            "Your quote why they joined MAISS. What they've gained here & Overall their experience in MAISS. 1-2 sentences.",
     },
     {
         id: 9,
         name: "Eshaan Rawat",
         position: "Co-VP of Professional Development",
         image: "/images/people/eshaan.JPG",
-        year: "Sophomore",
-        major: "Computer Science",
-        quote:
-            "Your quote why they joined MAISS. What they've gained here & Overall their experience in MAISS. 1-2 sentences.",
     },
     {
         id: 10,
         name: "Amelia Jukita",
         position: "Co-VP of Professional Development",
         image: "/images/people/mia.JPG",
-        year: "Sophomore",
-        major: "BIM",
-        quote:
-            "Your quote why they joined MAISS. What they've gained here & Overall their experience in MAISS. 1-2 sentences.",
     },
     {
         id: 11,
         name: "Marcus Cao",
         position: "VP of Finance",
         image: "/images/people/marcus.JPG",
-        year: "Sophomore",
-        major: "Business Administration",
-        quote:
-            "Your quote why they joined MAISS. What they've gained here & Overall their experience in MAISS. 1-2 sentences.",
     },
     {
         id: 12,
         name: "Erin Tran",
         position: "Co-VP of Internal Affairs",
         image: "/images/people/erin.JPG",
-        year: "Sophomore",
-        major: "Business Economics",
-        quote:
-            "Your quote why they joined MAISS. What they've gained here & Overall their experience in MAISS. 1-2 sentences.",
     },
     {
         id: 13,
         name: "Karissa Ting",
         position: "Co-VP of Internal Affairs",
         image: "/images/people/karissa.JPG",
-        year: "Sophomore",
-        major: "BIM",
-        quote:
-            "Your quote why they joined MAISS. What they've gained here & Overall their experience in MAISS. 1-2 sentences.",
     },
     {
         id: 14,
         name: "Malak Shahin",
         position: "Co-VP of Community Development",
         image: "/images/people/malak.png",
-        year: "Sophomore",
-        major: "Business Administration",
-        quote:
-            "Your quote why they joined MAISS. What they've gained here & Overall their experience in MAISS. 1-2 sentences.",
     },
     {
         id: 15,
         name: "Tirza Kunaidy",
         position: "Co-VP of Community Development",
         image: "/images/people/tirza.JPG",
-        year: "Sophomore",
-        major: "Business Economics",
-        quote:
-            "Your quote why they joined MAISS. What they've gained here & Overall their experience in MAISS. 1-2 sentences.",
     },
 ]
 
