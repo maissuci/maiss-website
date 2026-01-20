@@ -22,6 +22,17 @@ export default function EventsPage() {
   const [isScrolled, setIsScrolled] = useState(false)
   const [events, setEvents] = useState<Event[]>([
     {
+      id: "ui-ux-speaker-panel",
+      title: "UI/UX Speaker Panel",
+      date: "Jan 21th, 2026",
+      time: "6:00 PM - 7:00 PM",
+      location: "TBD",
+      description:
+        "Level up your design career 🎨💻 Join MAISS for an exclusive UI/UX Speaker Panel featuring industry professionals who’ve built impactful, user-centered experiences.",
+      image: "/images/events/event12.jpg",
+      status: "upcoming",
+    },
+    {
       id: "vibe-coding",
       title: "Into To Vibe Coding",
       date: "Jan 14th, 2026",
