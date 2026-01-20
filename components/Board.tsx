@@ -91,12 +91,86 @@ const boardMembers = [
         name: "Tirza Kunaidy",
         position: "Co-VP of Community Development",
         image: "/images/people/tirza.JPG",
+    }, 
+    //intern list starts here 
+    {
+        id: 16,
+        name: "Prakruthi Praveen",
+        position: "External Affairs Intern",
+        image: "/images/people/prakruthi.JPG",
+    },
+    {
+        id: 17,
+        name: "Lena Ponulak",
+        position: "External Affairs Intern",
+        image: "/images/people/lena.JPG",
+    },
+    {
+        id: 18,
+        name: "Neeva Mehta",
+        position: "Marketing Intern",
+        image: "/images/people/neeva.JPG",
+    },
+    {
+        id: 19,
+        name: "Melinda Do",
+        position: "Marketing Intern",
+        image: "/images/people/melinda.JPG",
+    },
+    {
+        id: 20,
+        name: "Kristin Francisco",
+        position: "Marketing Intern",
+        image: "/images/people/kristin.JPG",
+    },
+    {
+        id: 21, 
+        name: "Aithy Ho", 
+        position: "Professional Development Intern", 
+        image: "/images/people/aithy.JPG", 
+    }, 
+    {
+        id: 22, 
+        name: "Pranav Sethia", 
+        position: "Professional Development Intern", 
+        image: "/images/people/pranav.JPG", 
+    }, 
+    {
+        id: 23,
+        name: "Kurtis Lin",
+        position: "Finance Intern",
+        image: "/images/people/kurtis.JPG",
+    },
+    {
+        id: 24,
+        name: "Jade Chiang",
+        position: "Internal Affairs Intern",
+        image: "/images/people/jade.JPG",
+    },
+    {
+        id: 25,
+        name: "Aaryan Angadi",
+        position: "Internal Affairs Intern",
+        image: "/images/people/aaryan.JPG",
+    },
+    {
+        id: 26,
+        name: "Kristy Slu",
+        position: "Community Development Intern",
+        image: "/images/people/kristy.JPG",
+    },
+    {
+        id: 27,
+        name: "Sanika Patwardhan",
+        position: "Community Development Intern",
+        image: "/images/people/sanika.JPG",
     },
 ]
 
 // Split board members into top section (first 2) and bottom section
 const topBoardMembers = boardMembers.slice(0, 2)
 const tempBottomBoardMembers = boardMembers.slice(2, 15)
+const internMembers = boardMembers.slice(15)
 
 // Board member card component
 function BoardMemberCard({ name, position, image }: { name: string; position: string; image: string }) {
@@ -171,6 +245,24 @@ export default function BoardPage() {
                         <BoardMemberCard key={member.id} name={member.name} position={member.position} image={member.image} />
                     ))}
                 </div>
+
+                {/* Section divider */}
+                <div className="border-t border-gray-200 my-12"></div>
+
+                {/* Title */}
+                <div className="text-center mb-12">
+                    <h1 className="text-5xl font-bold bg-gradient-to-r from-purple-400 via-violet-500 to-blue-500 bg-clip-text text-transparent mb-6 font-Inter">
+                        Interns
+                    </h1>
+                </div>
+
+                {/* interns */}
+                <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-6 gap-y-10 gap-x-20 mb-20">
+                    {internMembers.map((member) => (
+                        <BoardMemberCard key={member.id} name={member.name} position={member.position} image={member.image} />
+                    ))}
+                </div>
+
             </div>
         </div>
     )
