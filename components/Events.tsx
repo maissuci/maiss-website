@@ -159,7 +159,7 @@ export default function EventsPage() {
                       {event.status === "past" && (
                         <div className="inline-block bg-gray-100 text-gray-500 px-4 py-2 rounded-md text-sm">
                           Past Event
-                        </div>
+                        </div> 
                       )}
                     </div>
                   </div>
