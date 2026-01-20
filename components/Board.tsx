@@ -145,7 +145,7 @@ const boardMembers = [
         id: 24,
         name: "Jade Chiang",
         position: "Internal Affairs Intern",
-        image: "/images/people/jade.JPG",
+        image: "/images/people/jade.jpg",
     },
     {
         id: 25,
