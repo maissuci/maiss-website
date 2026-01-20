@@ -25,7 +25,7 @@ export default function AboutPage() {
         return () => window.removeEventListener("scroll", handleScroll)
     }, [])
 
-    // Partner logos data
+    // Partner logos data 
     const partnerLogos = [
         { name: "Applied Materials", logo: "/images/companies/amat.svg" },
         { name: "Apple", logo: "/images/companies/apple2.png" },
