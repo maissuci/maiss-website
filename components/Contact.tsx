@@ -46,7 +46,7 @@ export default function ContactPage() {
                             className="gap-2 text-purple-600 hover:text-purple-700 hover:bg-purple-50 pl-0"
                             asChild
                         >
-                            <Link href="#">
+                            <Link href="https://www.instagram.com/maissuci/" target="_blank" rel="noopener noreferrer" className="text-gray-600 hover:text-[#a17dc3] text-sm">
                                 @maissuci <ChevronRight className="w-4 h-4" />
                             </Link>
                         </Button>
@@ -94,7 +94,7 @@ export default function ContactPage() {
                             className="gap-2 text-purple-600 hover:text-purple-700 hover:bg-purple-50 pl-0"
                             asChild
                         >
-                            <Link href="#">
+                            <Link href="https://www.linkedin.com/in/maissuci/" target="_blank" rel="noopener noreferrer" className="text-gray-600 hover:text-[#a17dc3] text-sm">
                                 UCI MAISS <ChevronRight className="w-4 h-4" />
                             </Link>
                         </Button>
@@ -118,7 +118,7 @@ export default function ContactPage() {
                             className="gap-2 text-purple-600 hover:text-purple-700 hover:bg-purple-50 pl-0"
                             asChild
                         >
-                            <Link href="#">
+                            <Link href="https://discord.gg/TBzFGd6TVa" target="_blank" rel="noopener noreferrer" className="text-gray-600 hover:text-[#a17dc3] text-sm">
                                 MAISS Discord <ChevronRight className="w-4 h-4" />
                             </Link>
                         </Button>

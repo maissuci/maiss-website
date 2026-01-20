@@ -55,7 +55,7 @@ export default function Footer() {
                                 </Link>
                             </li>
                             <li>
-                                <Link href="https://discord.com/invite/wbtsGUMdqY" target="_blank" rel="noopener noreferrer" className="text-gray-600 hover:text-[#a17dc3] text-sm">
+                                <Link href="https://discord.gg/TBzFGd6TVa" target="_blank" rel="noopener noreferrer" className="text-gray-600 hover:text-[#a17dc3] text-sm">
                                     Discord
                                 </Link>
                             </li>

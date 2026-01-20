@@ -44,6 +44,8 @@ export default function AboutPage() {
         { name: "PwC", logo: "/images/companies/pwc.svg" },
         { name: "SoFi", logo: "/images/companies/sofi.svg" },
         { name: "Amazon", logo: "/images/companies/zon.svg" },
+        { name: "Red Bull", logo: "/images/companies/redbull.svg" },
+        { name: "Capital One", logo: "/images/companies/capone.svg" },
     ]
 
     return (
