@@ -30,7 +30,7 @@ export default function EventsPage() {
       description:
         "Level up your design career 🎨💻 Join MAISS for an exclusive UI/UX Speaker Panel featuring industry professionals who’ve built impactful, user-centered experiences.",
       image: "/images/events/event12.jpg",
-      status: "upcoming",
+      status: "past",
     },
     {
       id: "vibe-coding",

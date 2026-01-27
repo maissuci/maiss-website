@@ -52,115 +52,121 @@ const boardMembers = [
     },
     {
         id: 9,
+        name: "Stephanie Santos",
+        position: "Co-VP of Marketing",
+        image: "/images/people/stephanie.JPG",
+    },
+    {
+        id: 10,
         name: "Eshaan Rawat",
         position: "Co-VP of Professional Development",
         image: "/images/people/eshaan.JPG",
     },
     {
-        id: 10,
+        id: 11,
         name: "Amelia Jukita",
         position: "Co-VP of Professional Development",
         image: "/images/people/mia.JPG",
     },
     {
-        id: 11,
+        id: 12,
         name: "Marcus Cao",
         position: "VP of Finance",
         image: "/images/people/marcus.JPG",
     },
     {
-        id: 12,
+        id: 13,
         name: "Erin Tran",
         position: "Co-VP of Internal Affairs",
         image: "/images/people/erin.JPG",
     },
     {
-        id: 13,
+        id: 14,
         name: "Karissa Ting",
         position: "Co-VP of Internal Affairs",
         image: "/images/people/karissa.JPG",
     },
     {
-        id: 14,
+        id: 15,
         name: "Malak Shahin",
         position: "Co-VP of Community Development",
         image: "/images/people/malak.png",
     },
     {
-        id: 15,
+        id: 16,
         name: "Tirza Kunaidy",
         position: "Co-VP of Community Development",
         image: "/images/people/tirza.JPG",
     }, 
     //intern list starts here 
     {
-        id: 16,
+        id: 17,
         name: "Prakruthi Praveen",
         position: "External Affairs Intern",
         image: "/images/people/prakruthi.JPG",
     },
     {
-        id: 17,
+        id: 18,
         name: "Lena Ponulak",
         position: "External Affairs Intern",
         image: "/images/people/lena.JPG",
     },
     {
-        id: 18,
+        id: 19,
         name: "Neeva Mehta",
         position: "Marketing Intern",
         image: "/images/people/neeva.JPG",
     },
     {
-        id: 19,
+        id: 20,
         name: "Melinda Do",
         position: "Marketing Intern",
         image: "/images/people/melinda.JPG",
     },
     {
-        id: 20,
+        id: 21,
         name: "Kristin Francisco",
         position: "Marketing Intern",
         image: "/images/people/kristin.JPG",
     },
     {
-        id: 21, 
+        id: 22, 
         name: "Aithy Ho", 
         position: "Professional Development Intern", 
         image: "/images/people/aithy.JPG", 
     }, 
     {
-        id: 22, 
+        id: 23, 
         name: "Pranav Sethia", 
         position: "Professional Development Intern", 
         image: "/images/people/pranav.JPG", 
     }, 
     {
-        id: 23,
+        id: 24,
         name: "Kurtis Lin",
         position: "Finance Intern",
         image: "/images/people/kurtis.JPG",
     },
     {
-        id: 24,
+        id: 25,
         name: "Jade Chiang",
         position: "Internal Affairs Intern",
         image: "/images/people/jade.jpg",
     },
     {
-        id: 25,
+        id: 26,
         name: "Aaryan Angadi",
         position: "Internal Affairs Intern",
         image: "/images/people/aaryan.JPG",
     },
     {
-        id: 26,
+        id: 27,
         name: "Kristy Slu",
         position: "Community Development Intern",
         image: "/images/people/kristy.JPG",
     },
     {
-        id: 27,
+        id: 28,
         name: "Sanika Patwardhan",
         position: "Community Development Intern",
         image: "/images/people/sanika.JPG",
@@ -169,8 +175,8 @@ const boardMembers = [
 
 // Split board members into top section (first 2) and bottom section
 const topBoardMembers = boardMembers.slice(0, 2)
-const tempBottomBoardMembers = boardMembers.slice(2, 15)
-const internMembers = boardMembers.slice(15)
+const tempBottomBoardMembers = boardMembers.slice(2, 16)
+const internMembers = boardMembers.slice(16)
 
 // Board member card component
 function BoardMemberCard({ name, position, image }: { name: string; position: string; image: string }) {
