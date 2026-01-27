@@ -54,7 +54,7 @@ const boardMembers = [
         id: 9,
         name: "Stephanie Santos",
         position: "Co-VP of Marketing",
-        image: "/images/people/stephanie.JPG",
+        image: "/images/people/stephanie.jpg",
     },
     {
         id: 10,
