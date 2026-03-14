@@ -1,6 +1,6 @@
 "use client"
 
-import { useState, useEffect, useCallback } from "react"
+import { useState, useEffect, useCallback, useRef } from "react"
 import Image from "next/image"
 import { ChevronLeft, ChevronRight } from "lucide-react"
 
@@ -16,6 +16,8 @@ interface ImageCarouselProps {
 
 export default function ImageCarousel({ images, autoSlideInterval = 5000 }: ImageCarouselProps) {
   const [currentIndex, setCurrentIndex] = useState(0)
+  const [isPaused, setIsPaused] = useState(false)
+  const pauseTimeoutRef = useRef<ReturnType<typeof setTimeout> | null>(null)
 
   const nextSlide = useCallback(() => {
     setCurrentIndex((prevIndex) => (prevIndex === images.length - 1 ? 0 : prevIndex + 1))
@@ -29,19 +31,45 @@ export default function ImageCarousel({ images, autoSlideInterval = 5000 }: Imag
     setCurrentIndex(index)
   }
 
+  const pauseForInteraction = useCallback(() => {
+    setIsPaused(true)
+    if (pauseTimeoutRef.current) {
+      clearTimeout(pauseTimeoutRef.current)
+    }
+    pauseTimeoutRef.current = setTimeout(() => {
+      setIsPaused(false)
+    }, 4000)
+  }, [])
+
   // Auto-slide functionality
   useEffect(() => {
+    if (images.length <= 1 || isPaused) {
+      return
+    }
+
     const interval = setInterval(() => {
       nextSlide()
     }, autoSlideInterval)
 
     return () => clearInterval(interval)
-  }, [nextSlide, autoSlideInterval])
+  }, [nextSlide, autoSlideInterval, images.length, isPaused])
+
+  useEffect(() => {
+    return () => {
+      if (pauseTimeoutRef.current) {
+        clearTimeout(pauseTimeoutRef.current)
+      }
+    }
+  }, [])
 
   return (
-    <div className="relative w-full overflow-hidden shadow-lg">
+    <div
+      className="relative w-full overflow-hidden rounded-3xl border border-mist shadow-soft"
+      onMouseEnter={() => setIsPaused(true)}
+      onMouseLeave={() => setIsPaused(false)}
+    >
       {/* Carousel container */}
-      <div className="relative h-[800px] min-h-[300px] w-full overflow-hidden">
+      <div className="relative h-[420px] sm:h-[480px] lg:h-[540px] w-full overflow-hidden">
         {/* Slides */}
         {images.map((image, index) => (
           <div
@@ -59,7 +87,7 @@ export default function ImageCarousel({ images, autoSlideInterval = 5000 }: Imag
             />
             {/* Optional caption overlay */}
             <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/60 to-transparent p-4">
-              <p className="text-white text-lg font-medium">{image.alt}</p>
+              <p className="text-white text-base md:text-lg font-medium">{image.alt}</p>
             </div>
           </div>
         ))}
@@ -67,14 +95,20 @@ export default function ImageCarousel({ images, autoSlideInterval = 5000 }: Imag
 
       {/* Navigation arrows */}
       <button
-        onClick={prevSlide}
+        onClick={() => {
+          prevSlide()
+          pauseForInteraction()
+        }}
         className="absolute left-2 top-1/2 -translate-y-1/2 bg-white/30 backdrop-blur-sm hover:bg-white/50 rounded-full p-2 transition-colors"
         aria-label="Previous slide"
       >
         <ChevronLeft className="h-6 w-6 text-white" />
       </button>
       <button
-        onClick={nextSlide}
+        onClick={() => {
+          nextSlide()
+          pauseForInteraction()
+        }}
         className="absolute right-2 top-1/2 -translate-y-1/2 bg-white/30 backdrop-blur-sm hover:bg-white/50 rounded-full p-2 transition-colors"
         aria-label="Next slide"
       >
@@ -86,7 +120,10 @@ export default function ImageCarousel({ images, autoSlideInterval = 5000 }: Imag
         {images.map((_, index) => (
           <button
             key={index}
-            onClick={() => goToSlide(index)}
+            onClick={() => {
+              goToSlide(index)
+              pauseForInteraction()
+            }}
             className={`w-2 h-2 rounded-full transition-all ${
               index === currentIndex ? "bg-white w-6" : "bg-white/50 hover:bg-white/80"
             }`}

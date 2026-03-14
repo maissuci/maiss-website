@@ -49,7 +49,7 @@ export default function AboutPage() {
     ]
 
     return (
-        <div className="flex flex-col min-h-screen bg-white text-gray-800 mt-20">
+        <div className="flex flex-col min-h-screen bg-white text-ink mt-20">
 
             {/* Image Board */}
             <div className="relative w-full h-[600px] mb-16">
@@ -58,17 +58,15 @@ export default function AboutPage() {
                     alt="MAISS Community"
                     className="w-full h-full object-cover"
                 />
-                <div className="absolute inset-0 bg-black/70"></div>
+                <div className="absolute inset-0 bg-black/65"></div>
                 <div className="absolute inset-0 flex flex-col justify-center px-8 md:px-16 lg:px-24 max-w-4xl">
                     <h2
-                        className="text-[4.5rem] leading-[1.1] font-medium text-white mb-8"
-                        style={{ fontFamily: 'system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif' }}
+                        className="text-[3.5rem] md:text-[4.5rem] leading-[1.05] font-display font-semibold text-white mb-6 text-balance"
                     >
                         About MAISS
                     </h2>
                     <p
-                        className="text-white text-xl max-w-2xl leading-relaxed"
-                        style={{ fontFamily: 'system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif' }}
+                        className="text-white/90 text-lg md:text-xl max-w-2xl leading-relaxed"
                     >
                         MAISS strives to bridge the gap between business and technology,
                         providing opportunities for professional growth and community building.
@@ -79,7 +77,7 @@ export default function AboutPage() {
             <main className="flex-grow">
 
                 {/* History Section */}
-                <section className="container mx-auto py-16 px-6 bg-gray-50">
+                <section className="container mx-auto py-16 px-6 bg-soft">
                     <div className="max-w-4xl mx-auto">
 
                         <div className="space-y-12">
@@ -90,13 +88,13 @@ export default function AboutPage() {
                                 className="flex flex-col md:flex-row gap-6"
                             >
                                 <div className="md:w-1/4">
-                                    <div className="text-xl font-medium bg-gradient-to-r from-[#e75a94] to-[#a17dc3] inline-block text-transparent bg-clip-text">
+                                    <div className="text-xl font-semibold bg-gradient-to-r from-brand-pink to-brand-lavender inline-block text-transparent bg-clip-text">
                                         2010
                                     </div>
                                 </div>
                                 <div className="md:w-3/4">
-                                    <h3 className="text-xl font-medium mb-2 text-gray-900">Foundation</h3>
-                                    <p className="text-gray-600">
+                                    <h3 className="text-xl font-semibold mb-2 text-ink">Foundation</h3>
+                                    <p className="text-muted leading-relaxed">
                                         MAISS was founded by a group of BIM majors in 2010 who recognized the need for a student organization that
                                         focused on the intersection of business and technology.
                                     </p>
@@ -110,13 +108,13 @@ export default function AboutPage() {
                                 className="flex flex-col md:flex-row gap-6"
                             >
                                 <div className="md:w-1/4">
-                                    <div className="text-xl font-medium bg-gradient-to-r from-[#a17dc3] to-[#5bb5cf] inline-block text-transparent bg-clip-text">
+                                    <div className="text-xl font-semibold bg-gradient-to-r from-brand-lavender to-brand-blue inline-block text-transparent bg-clip-text">
                                         2020
                                     </div>
                                 </div>
                                 <div className="md:w-3/4">
-                                    <h3 className="text-xl font-medium mb-2 text-gray-900">Growth & Expansion</h3>
-                                    <p className="text-gray-600">
+                                    <h3 className="text-xl font-semibold mb-2 text-ink">Growth & Expansion</h3>
+                                    <p className="text-muted leading-relaxed">
                                         By 2020, MAISS had grown to dozens of active members with an established alumni network,
                                         offering workshops, panels, and social events.
                                     </p>
@@ -130,13 +128,13 @@ export default function AboutPage() {
                                 className="flex flex-col md:flex-row gap-6"
                             >
                                 <div className="md:w-1/4">
-                                    <div className="text-xl font-medium bg-gradient-to-r from-[#a17dc3] to-[#e75a94] inline-block text-transparent bg-clip-text">
+                                    <div className="text-xl font-semibold bg-gradient-to-r from-brand-lavender to-brand-pink inline-block text-transparent bg-clip-text">
                                         Today
                                     </div>
                                 </div>
                                 <div className="md:w-3/4">
-                                    <h3 className="text-xl font-medium mb-2 text-gray-900">Innovation & Impact</h3>
-                                    <p className="text-gray-600">
+                                    <h3 className="text-xl font-semibold mb-2 text-ink">Innovation & Impact</h3>
+                                    <p className="text-muted leading-relaxed">
                                         Today, MAISS continues to innovate and expand its offerings, with a focus on emerging technologies
                                         and industry trends.
                                     </p>
@@ -152,13 +150,13 @@ export default function AboutPage() {
 
                     <div className="max-w-4xl mx-auto text-center relative z-10">
                         <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6 }}>
-                            <h2 className="text-3xl font-medium mb-4 text-gray-900">
-                                <span className="bg-gradient-to-r from-[#e75a94] to-[#5bb5cf] inline-block text-transparent bg-clip-text">
+                            <h2 className="text-3xl md:text-4xl font-display font-semibold mb-4 text-ink">
+                                <span className="bg-gradient-to-r from-brand-pink to-brand-blue inline-block text-transparent bg-clip-text">
                                     Our Experience
                                 </span>
                             </h2>
-                            <p className="text-black-600 mb-8 max-w-xl mx-auto">
-                                MAISS has countless members with competitive internships and full-time experience
+                            <p className="text-muted mb-8 max-w-xl mx-auto leading-relaxed">
+                                MAISS has countless members with internships and full-time experience
                                 at Fortune 500 companies, prestigious firms, and unicorn startups.
                             </p>
                         </motion.div>
@@ -190,8 +188,8 @@ export default function AboutPage() {
                                 />
                             </div>
                             <div className="md:w-1/2">
-                                <h3 className="text-4xl font-medium mb-6 text-[#b67db4]">Academic</h3>
-                                <p className="text-gray-700">
+                                <h3 className="text-3xl md:text-4xl font-display font-semibold mb-4 text-brand-lavender">Academic</h3>
+                                <p className="text-muted leading-relaxed">
                                     Representing BIM students by fostering relationships among fellow peers, faculty, and staff within the
                                     Donald Bren School of <span className="font-semibold">Information and Computer Sciences</span> and the 
                                      <span className="font-semibold"> Paul Merage School of Business</span>.
@@ -216,8 +214,8 @@ export default function AboutPage() {
                                 />
                             </div>
                             <div className="md:w-1/2">
-                                <h3 className="text-4xl font-medium mb-6 text-[#8ab4e8]">Professional</h3>
-                                <p className="text-gray-700">
+                                <h3 className="text-3xl md:text-4xl font-display font-semibold mb-4 text-brand-blue">Professional</h3>
+                                <p className="text-muted leading-relaxed">
                                     MAISS provides year-round mentorship and internship programs to support professional development and
                                     leadership growth. Our events cover fields like software engineering, product management, consulting,
                                     marketing, and UI/UX. With guest speakers from{" "}
@@ -245,8 +243,8 @@ export default function AboutPage() {
                                 />
                             </div>
                             <div className="md:w-1/2">
-                                <h3 className="text-4xl font-medium mb-6 text-[#b67db4]">Social</h3>
-                                <p className="text-gray-700">
+                                <h3 className="text-3xl md:text-4xl font-display font-semibold mb-4 text-brand-pink">Social</h3>
+                                <p className="text-muted leading-relaxed">
                                     Beyond our determination towards success, MAISS is also a fun community to make unforgettable
                                     memories. You will be able to create <span className="font-semibold">lifelong friendships</span> with
                                     those who have aligned interests as you and embark on fun activities such as beach days, retreats,

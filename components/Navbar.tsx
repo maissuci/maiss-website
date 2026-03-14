@@ -18,7 +18,7 @@ export default function Navbar() {
   ]
 
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 bg-white/90 backdrop-blur-md shadow-sm w-full">
+    <header className="fixed top-0 left-0 right-0 z-50 bg-white/85 backdrop-blur-md border-b border-mist w-full">
       <div className="container mx-auto py-4 px-6">
         <nav className="flex items-center justify-between">
           {/* Logo */}
@@ -27,18 +27,18 @@ export default function Navbar() {
           </Link>
 
           {/* Desktop Nav */}
-          <div className="hidden md:flex justify-end space-x-12 flex-1">
+          <div className="hidden md:flex justify-end space-x-10 flex-1">
             {navItems.map((item) => (
               <Link
                 key={item.name}
                 href={item.href}
-                className={`relative text-sm font-medium transition-colors group ${
-                  pathname === item.href ? "text-[#a17dc3]" : "text-[#3c3c3c] hover:text-[#6d6d6d]"
+                className={`relative text-xs font-semibold tracking-[0.2em] transition-colors group ${
+                  pathname === item.href ? "text-ink" : "text-muted hover:text-ink"
                 }`}
               >
                 {item.name}
                 <span
-                  className={`absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-[#e75a94] via-[#a17dc3] to-[#5bb5cf] transition-all duration-300 group-hover:w-full ${
+                  className={`absolute -bottom-2 left-0 w-0 h-0.5 bg-gradient-to-r from-brand-pink via-brand-lavender to-brand-blue transition-all duration-300 group-hover:w-full ${
                     pathname === item.href ? "w-full" : ""
                   }`}
                 ></span>
@@ -48,7 +48,7 @@ export default function Navbar() {
 
           {/* Hamburger */}
           <button
-            className="md:hidden text-[#3c3c3c] hover:text-[#6d6d6d]"
+            className="md:hidden text-muted hover:text-ink"
             onClick={() => setMenuOpen(!menuOpen)}
             aria-label="Toggle menu"
           >
@@ -66,8 +66,8 @@ export default function Navbar() {
                 key={item.name}
                 href={item.href}
                 onClick={() => setMenuOpen(false)} // Close menu on click
-                className={`block text-sm font-medium ${
-                  pathname === item.href ? "text-[#a17dc3]" : "text-[#3c3c3c] hover:text-[#6d6d6d]"
+                className={`block text-xs font-semibold tracking-[0.2em] ${
+                  pathname === item.href ? "text-ink" : "text-muted hover:text-ink"
                 }`}
               >
                 {item.name}
