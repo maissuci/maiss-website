@@ -1,0 +1,17 @@
+1. Dense hero and section paragraphs are full-width with long line length, which hurts readability.
+Planned fix: constrain text with max-widths, increase line-height, and introduce consistent spacing between headings and copy.
+
+2. Typography is inconsistent across pages (inline system font overrides, undefined font classes like font-Inter, and mixed heading scales).
+Planned fix: introduce a global display/body font pairing, define them in Tailwind, and standardize heading sizes and weights.
+
+3. Color system is inconsistent and overly purple-heavy; gradients vary per section with no shared palette.
+Planned fix: define a small brand palette in Tailwind (brand pink/blue with a light lavender accent) and reuse those tokens for gradients, borders, and highlights.
+
+4. Board page cards are visually flat (no surface, spacing, or hierarchy), making the grid feel plain and unprofessional.
+Planned fix: add card surfaces with subtle borders/shadows, consistent image rounding, and tighter typography hierarchy.
+
+5. Several text classes are invalid (e.g. text-black-600), which results in fallback styling and visual inconsistency.
+Planned fix: replace with valid semantic color utilities (text-muted, text-ink) and standardize across sections.
+
+6. Contact page background blobs are absolutely positioned without a relative container, which can cause unpredictable overlaps.
+Planned fix: make the page container relative and align decorative elements with a consistent, lighter gradient.

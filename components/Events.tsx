@@ -70,7 +70,7 @@ export default function EventsPage() {
   }, [])
 
   return (
-    <div className="flex flex-col min-h-screen bg-white text-gray-800">
+    <div className="flex flex-col min-h-screen bg-white text-ink">
 
       {/* Image Board */}
       <div className="relative w-full h-[600px] mb-16 mt-20">
@@ -79,17 +79,15 @@ export default function EventsPage() {
           alt="MAISS Community"
           className="w-full h-full object-cover"
         />
-        <div className="absolute inset-0 bg-black/70"></div>
+        <div className="absolute inset-0 bg-black/65"></div>
         <div className="absolute inset-0 flex flex-col justify-center px-8 md:px-16 lg:px-24 max-w-4xl">
           <h2
-            className="text-[4.5rem] leading-[1.1] font-medium text-white mb-8"
-            style={{ fontFamily: 'system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif' }}
+            className="text-[3.5rem] md:text-[4.5rem] leading-[1.05] font-display font-semibold text-white mb-6 text-balance"
           >
             Our Events
           </h2>
           <p
-            className="text-white text-xl max-w-2xl leading-relaxed"
-            style={{ fontFamily: 'system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif' }}
+            className="text-white/90 text-lg md:text-xl max-w-2xl leading-relaxed"
           >
             Join us for exciting events throughout the year, from professional development workshops to social
             gatherings and panels with industry professionals. Check out our upcoming and past events below!
@@ -117,7 +115,7 @@ export default function EventsPage() {
                   >
                     {/* Image Section */}
                     <div className="w-full md:w-1/2 relative">
-                      <div className="relative rounded-2xl overflow-hidden shadow-lg aspect-[4/3.95]">
+                      <div className="relative rounded-3xl overflow-hidden border border-mist shadow-soft aspect-[4/3.95]">
                         {event.status === "live" && (
                           <div className="absolute top-4 left-4 z-10 bg-red-500 text-white text-xs font-bold px-2 py-1 rounded-full flex items-center">
                             <span className="w-2 h-2 bg-white rounded-full mr-1 animate-pulse"></span>
@@ -136,39 +134,39 @@ export default function EventsPage() {
                     {/* Content Section */}
                     <div className="w-full md:w-1/2">
                       <h2
-                        className={`text-3xl md:text-4xl font-medium mb-3 ${index % 3 === 0
-                            ? "bg-gradient-to-r from-[#e75a94] to-[#a17dc3]"
+                        className={`text-3xl md:text-4xl font-display font-semibold mb-3 ${index % 3 === 0
+                            ? "bg-gradient-to-r from-brand-pink to-brand-lavender"
                             : index % 3 === 1
-                              ? "bg-gradient-to-r from-[#a17dc3] to-[#5bb5cf]"
-                              : "bg-gradient-to-r from-[#e75a94] to-[#5bb5cf]"
+                              ? "bg-gradient-to-r from-brand-lavender to-brand-blue"
+                              : "bg-gradient-to-r from-brand-pink to-brand-blue"
                           } inline-block text-transparent bg-clip-text`}
                       >
                         {event.title}
                       </h2>
 
-                      <p className="text-xl text-gray-600 mb-6">{event.date}</p>
+                      <p className="text-lg text-muted mb-6">{event.date}</p>
 
                       <div className="flex flex-col space-y-4 mb-6">
-                        <div className="flex items-center text-gray-600">
-                          <Clock className="w-5 h-5 mr-2 text-[#a17dc3]" />
+                        <div className="flex items-center text-muted">
+                          <Clock className="w-5 h-5 mr-2 text-brand-lavender" />
                           <span>{event.time}</span>
                         </div>
-                        <div className="flex items-center text-gray-600">
-                          <MapPin className="w-5 h-5 mr-2 text-[#a17dc3]" />
+                        <div className="flex items-center text-muted">
+                          <MapPin className="w-5 h-5 mr-2 text-brand-lavender" />
                           <span>{event.location}</span>
                         </div>
                       </div>
 
-                      <p className="text-gray-700 mb-8">{event.description}</p>
+                      <p className="text-muted mb-8 leading-relaxed">{event.description}</p>
 
                       {event.status === "upcoming" && event.registrationLink && (
-                        <Button className="bg-gradient-to-r from-[#e75a94] to-[#5bb5cf] hover:opacity-90 text-white rounded-md px-6 py-3 text-sm font-medium transition-colors">
+                        <Button className="bg-gradient-to-r from-brand-pink to-brand-blue hover:opacity-90 text-white rounded-md px-6 py-3 text-sm font-medium transition-colors">
                           Register Now
                         </Button>
                       )}
 
                       {event.status === "past" && (
-                        <div className="inline-block bg-gray-100 text-gray-500 px-4 py-2 rounded-md text-sm">
+                        <div className="inline-block bg-mist text-muted px-4 py-2 rounded-md text-sm">
                           Past Event
                         </div> 
                       )}

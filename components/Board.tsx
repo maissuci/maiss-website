@@ -181,19 +181,19 @@ const internMembers = boardMembers.slice(16)
 // Board member card component
 function BoardMemberCard({ name, position, image }: { name: string; position: string; image: string }) {
     return (
-        <div className="flex flex-col items-center">
-            <div className="w-full aspect-[3/4] overflow-hidden mb-2">
+        <div className="flex flex-col items-center rounded-2xl border border-mist bg-white p-4 shadow-soft">
+            <div className="w-full aspect-[3/4] overflow-hidden mb-3 rounded-xl">
                 <img src={image || "/placeholder.svg"} alt={name} className="w-full h-full object-cover" />
             </div>
-            <h3 className="font-bold text-center">{name}</h3>
-            <p className="text-sm text-gray-600 text-center">{position}</p>
+            <h3 className="font-semibold text-center text-ink">{name}</h3>
+            <p className="text-sm text-muted text-center">{position}</p>
         </div>
     )
 }
 
 export default function BoardPage() {
     return (
-        <div className="min-h-screen bg-white">
+        <div className="min-h-screen bg-white text-ink">
             {/* Image Board */}
             <div className="relative w-full h-[600px] mb-16 mt-20">
                 <img
@@ -201,17 +201,15 @@ export default function BoardPage() {
                     alt="MAISS Community"
                     className="w-full h-full object-cover"
                 />
-                <div className="absolute inset-0 bg-black/70"></div>
+                <div className="absolute inset-0 bg-black/65"></div>
                 <div className="absolute inset-0 flex flex-col justify-center px-8 md:px-16 lg:px-24 max-w-4xl">
                     <h2
-                        className="text-[4.5rem] leading-[1.1] font-medium text-white mb-8"
-                        style={{ fontFamily: 'system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif' }}
+                        className="text-[3.5rem] md:text-[4.5rem] leading-[1.05] font-display font-semibold text-white mb-6 text-balance"
                     >
                         Meet the Board
                     </h2>
                     <p
-                        className="text-white text-xl max-w-2xl leading-relaxed"
-                        style={{ fontFamily: 'system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif' }}
+                        className="text-white/90 text-lg md:text-xl max-w-2xl leading-relaxed"
                     >
                        Meet the dedicated team leading MAISS — Our board members are passionate innovators, creators, and leaders 
                        with experience working at top companies in tech and business.
@@ -220,16 +218,16 @@ export default function BoardPage() {
             </div>
             
             <div className="container mx-auto px-4 py-12 max-w-6xl">
-                {/* Title */}
                 <div className="text-center mb-12">
-                    <h1 className="text-5xl font-bold bg-gradient-to-r from-purple-400 via-violet-500 to-blue-500 bg-clip-text text-transparent mb-6 font-Inter">
+                    <p className="text-sm uppercase tracking-[0.2em] text-muted mb-3">Leadership</p>
+                    <h1 className="text-4xl md:text-5xl font-display font-semibold bg-gradient-to-r from-brand-pink via-brand-lavender to-brand-blue bg-clip-text text-transparent">
                         Executive Committee
                     </h1>
                 </div>
 
 
                 {/* executive committee (2 people) */}
-                <div className="grid grid-cols-2 max-w-3xl mx-auto gap-x-20 mb-16">
+                <div className="grid grid-cols-1 sm:grid-cols-2 max-w-3xl mx-auto gap-8 mb-16">
                     {topBoardMembers.map((member) => (
                         <BoardMemberCard key={member.id} name={member.name} position={member.position} image={member.image} />
                     ))}
@@ -240,13 +238,14 @@ export default function BoardPage() {
 
                 {/* Title */}
                 <div className="text-center mb-12">
-                    <h1 className="text-5xl font-bold bg-gradient-to-r from-purple-400 via-violet-500 to-blue-500 bg-clip-text text-transparent mb-6 font-Inter">
+                    <p className="text-sm uppercase tracking-[0.2em] text-muted mb-3">Our Team</p>
+                    <h1 className="text-4xl md:text-5xl font-display font-semibold bg-gradient-to-r from-brand-pink via-brand-lavender to-brand-blue bg-clip-text text-transparent">
                         Board Members
                     </h1>
                 </div>
 
                 {/* board members */}
-                <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-6 gap-y-10 gap-x-20 mb-20">
+                <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-6 gap-y-10 gap-x-10 mb-20">
                     {tempBottomBoardMembers.map((member) => (
                         <BoardMemberCard key={member.id} name={member.name} position={member.position} image={member.image} />
                     ))}
@@ -257,13 +256,14 @@ export default function BoardPage() {
 
                 {/* Title */}
                 <div className="text-center mb-12">
-                    <h1 className="text-5xl font-bold bg-gradient-to-r from-purple-400 via-violet-500 to-blue-500 bg-clip-text text-transparent mb-6 font-Inter">
+                    <p className="text-sm uppercase tracking-[0.2em] text-muted mb-3">Future Board</p>
+                    <h1 className="text-4xl md:text-5xl font-display font-semibold bg-gradient-to-r from-brand-pink via-brand-lavender to-brand-blue bg-clip-text text-transparent">
                         Interns
                     </h1>
                 </div>
 
                 {/* interns */}
-                <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-6 gap-y-10 gap-x-20 mb-20">
+                <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-6 gap-y-10 gap-x-10 mb-20">
                     {internMembers.map((member) => (
                         <BoardMemberCard key={member.id} name={member.name} position={member.position} image={member.image} />
                     ))}
