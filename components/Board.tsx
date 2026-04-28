@@ -131,7 +131,7 @@ const boardMembers = [
     },
     {
         id: 22, 
-        name: "Aithy H", 
+        name: "Aithy", 
         position: "Professional Development Intern", 
         image: "/images/people/aithy.JPG", 
     }, 
