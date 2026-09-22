@@ -42,7 +42,7 @@ const boardMembers = [
         id: 7,
         name: "Leo Wu-Hacohen",
         position: "Co-VP of Marketing",
-        image: "/images/people/leo.JPG",
+        image: "/images/people/leo.jpg",
     },
     {
         id: 8,
@@ -54,7 +54,7 @@ const boardMembers = [
         id: 9,
         name: "Pranav Sethia",
         position: "Co-VP of Professional Development",
-        image: "/images/people/pranav.jpg",
+        image: "/images/people/pranav.JPG",
     },
     {
         id: 10,
@@ -66,7 +66,7 @@ const boardMembers = [
         id: 11,
         name: "Jade Chiang",
         position: "Co-VP of Internal Affairs",
-        image: "/images/people/jade.JPG",
+        image: "/images/people/jade.jpg",
     },
     {
         id: 12,
